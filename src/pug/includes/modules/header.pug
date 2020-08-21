@@ -1,13 +1,38 @@
 header
-   .header__row
-      nav.header__menu(class=['menu'])>
-         .menu__icon(class=['icon-menu']) 
-            span
-            span
-            span
-         .menu_body 
-            ul.menu__list 
-               li<a href="".menu_link>abaut
-               li<a href="".menu_link>work
-               li<a href="".menu_link>shop  
-               li<a href="".menu_link>contact 
+  .container
+     .header-top
+       .header-top-lang
+          a(class="header-top-lang_item" href="") EN
+          |
+          |
+          a(class="header-top-lang_item" href="") RU
+          |
+          |
+          a(class="header-top-lang_item" href="") ESP
+       a(class="header-top_link" href="") Online ordering
+     .header-botton
+       .header-botton_colunm
+         .header-botton-nemu
+            .header-botton-nemu-list
+              ul
+                li
+                  a(class="header-botton-nemu_link" href="") ABOUT
+                li
+                  a(class="header-botton-nemu_link" href="") Menus
+                li
+                  a(class="header-botton-nemu_link" href="") Service info
+       .header-botton_colunm
+          .header-logo
+            span.header-logo_text NVC's
+            span.header-logo_image
+              img(src="../assets/img/logo.png" alt="")
+            span.header-logo_text Catering
+       .header-botton_colunm
+         .header-botton-nemu-list
+              ul
+                li
+                  a(class="header-botton-nemu_link" href="") ABOUT
+                li
+                  a(class="header-botton-nemu_link" href="") Menus
+                li
+                  a(class="header-botton-nemu_link" href="") Service info 
