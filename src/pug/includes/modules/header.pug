@@ -1,38 +1,44 @@
 header
   .container
-     .header-top
-       .header-top-lang
-          a(class="header-top-lang_item" href="") EN
+    .header-top
+      .header-top-lang
+        a(class="header-top-lang__item" class=['activ'] href="") EN
           |
           |
-          a(class="header-top-lang_item" href="") RU
+        a(class="header-top-lang__item" href="") RU
           |
           |
-          a(class="header-top-lang_item" href="") ESP
-       a(class="header-top_link" href="") Online ordering
-     .header-botton
-       .header-botton_colunm
-         .header-botton-nemu
-            .header-botton-nemu-list
-              ul
-                li
-                  a(class="header-botton-nemu_link" href="") ABOUT
-                li
-                  a(class="header-botton-nemu_link" href="") Menus
-                li
-                  a(class="header-botton-nemu_link" href="") Service info
-       .header-botton_colunm
+        a(class="header-top-lang__item" href="") ESP
+      a(class="header-top__link" href="") Online ordering
+    .header-bottom
+      .header-bottom__column
+         nav.header-bottom-menu
+          .header-bottom-menu-list
+            ul
+              li
+                a(class="header-bottom-menu__link" href="") ABOUT
+              li
+                a(class="header-bottom-menu__link" href="") Menus
+              li
+                a(class="header-bottom-menu__link" href="") Service info
+      .header-bottom__column
           .header-logo
-            span.header-logo_text NVC's
-            span.header-logo_image
+            span.header-logo__text NVC's
+            span.header-logo__image
               img(src="../assets/img/logo.png" alt="")
-            span.header-logo_text Catering
-       .header-botton_colunm
-         .header-botton-nemu-list
-              ul
-                li
-                  a(class="header-botton-nemu_link" href="") ABOUT
-                li
-                  a(class="header-botton-nemu_link" href="") Menus
-                li
-                  a(class="header-botton-nemu_link" href="") Service info 
+            span.header-logo__text Catering
+      .header-bottom__column
+         nav.header-bottom-menu(class="header-bottom-menu--right")
+          .header-bottom-menu-list
+            ul
+              li
+                a(class="header-bottom-menu__link" href="") Gallery
+              li
+                a(class="header-bottom-menu__link" href="") Friends
+              li
+                a(class="header-bottom-menu__link" href="") Contact 
+    .header-menu__icon
+        span
+        span
+        span
+    .header-menu
