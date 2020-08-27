@@ -79,7 +79,6 @@ if($("#map").length>0){
 	map(1);
 }
 
-
 /* YA
 function map(n){
 	ymaps.ready(init);

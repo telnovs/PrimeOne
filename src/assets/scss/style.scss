@@ -434,7 +434,6 @@ h6 {
    @media (max-width:$md4+px){
       padding:30px 0 0 0;
    }
- 
 
    &__row{
       @include flexbox();
@@ -489,6 +488,104 @@ h6 {
       padding: 0px 15px 0px 0px;
       line-height: 25px;}
 }
+//==============================================================
+.contacts {
+   padding: 80px 0px 0px 0px;
+   @media (max-width:$md2+px){
+      padding: 30px 0px 0px 0px;
+   }
+}
+.contacts-top {}
+
+.contacts-title {
+   font-family: 'AkzidenzGroteskBQCondensedBold';
+   text-transform: uppercase;
+   font-size: 50px;
+   letter-spacing: 5px;
+   margin: 0px 0px 30px 0px;
+}
+.contacts-body {
+   @include flexbox();
+   flex-wrap: wrap;
+   &__column {
+      flex: 0 0 50%;
+      margin: 0px 0px 20px 0px;
+      @media (max-width:$md2+px){
+         flex: 1 1 100%;
+      }
+   }
+   &__item {
+      font-size: 15px;
+      color: #000;
+      display: inline-block;
+      line-height: 27px;
+      padding: 0px 0px 0px 35px;
+   }
+   &__item--1 {
+      background: url('../img/contacts/001.png') left no-repeat;
+   }
+   &__item--2 {
+      background: url('../img/contacts/002.png') left no-repeat;
+   }
+   &__item--3 {
+      background: url('../img/contacts/003.png') left no-repeat;
+   }
+  }
+.contacts-social {
+   @include flexbox();
+
+   &__item {
+      margin: 0px 30px 0px 0px;
+      &:last-child{margin:0px 0px 0px 0px;}
+   }   
+ }
+.contacts-content {
+   @include flexbox();
+   background-color: #000;
+   @media (max-width:$md2+px){
+      display: block;
+   }
+
+   &__column {
+      flex: 0 0 50%;
+   }
+   &__map {
+      height: 100%;
+      @media (max-width:$md2+px){
+         height: 300px;
+      }
+   }
+}
+.contacts-content-form {
+   padding: 55px 60px;
+   @media (max-width:$md2+px){
+      padding: 30px;
+   }
+
+   &__title {
+      font-family: 'AkzidenzGroteskBQCondensedBold';
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 25px;
+      letter-spacing: 5px;
+      margin: 0px 0px 30px 0px;
+      }
+   &__btn {}
+}
+.contacts-content-form-body {
+   max-width: 375px;
+   @media (max-width:$md2+px){
+      max-width: none;
+   }
+}
+.contacts-content-form-line {
+   margin: 0px 0px 25px 0px;
+}
+.input {
+}
+.req {
+}
+.contacts-content-form-button {}
 
 
 
