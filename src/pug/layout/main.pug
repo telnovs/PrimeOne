@@ -155,17 +155,18 @@ html(lang='ru')
                     a( href="" class="contacts-social__item" class=["contacts-social__item--4"]): img(src="../assets/img/icons/social/04.png" alt="" )
           .contacts-content
             .contacts-content__column
-              .contacts-content__map(#map)
+              #map(class="contacts-content__map")
             .contacts-content__column
               .contacts-content-form
                 .contacts-content-form__title Get in touch
                   form(action="#" class="contacts-content-form-body")
-                    .contacts-content-form-line
-                      input(autocomplete="off" type="text" name="form[]" data-value="Name" class="input req")
-                    .contacts-content-form-line
-                      input(autocomplete="off" type="text" name="form[]" data-value="E-mail or phone number" class="input")
-                    .contacts-content-form-line
-                      textarea(autocomplete="off" name="form[]" data-value="Your message" class="input req")
-                    .contacts-content-form-button
-                      button(type="submit" class="contacts-content-form__btn" class=["btn", "btn--w"]) Send message
+                .contacts-content-form-line
+                  input(autocomplete="off" type="text" name="form[]" data-value="Name" class="input req")
+                .contacts-content-form-line
+                  input(autocomplete="off" type="text" name="form[]" data-value="E-mail or phone number" class="input")
+                .contacts-content-form-line
+                  textarea(autocomplete="off" name="form[]" data-value="Your message" class="input req")
+                .contacts-content-form-button
+                  button(type="submit" class="contacts-content-form__btn" class=["btn", "btn--w"]) Send message
+      include ../includes/modules/footer
     script(src="https://maps.google.com/maps/api/js?sensor=false&amp;key=")
